@@ -1,3 +1,5 @@
-# Podemos especificar archivos individuales
 .DS_Store
 
+# Workspace files
+SimpleMusicPlayer/SimpleMusicPlayer.xcodeproj/project.xcworkspace/
+SimpleMusicPlayer/SimpleMusicPlayer.xcodeproj/xcuserdata/
