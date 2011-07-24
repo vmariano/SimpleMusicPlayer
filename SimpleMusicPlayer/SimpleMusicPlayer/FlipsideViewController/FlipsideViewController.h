@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @protocol FlipsideViewControllerDelegate;
-
 @interface FlipsideViewController : UIViewController {
 
 }
@@ -22,5 +21,7 @@
 
 
 @protocol FlipsideViewControllerDelegate
+
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller;
+
 @end

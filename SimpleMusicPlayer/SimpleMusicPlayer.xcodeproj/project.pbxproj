@@ -12,18 +12,19 @@
 		9AA7DD8613DCA7F6009387BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA7DD8513DCA7F6009387BF /* CoreGraphics.framework */; };
 		9AA7DD8C13DCA7F6009387BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AA7DD8A13DCA7F6009387BF /* InfoPlist.strings */; };
 		9AA7DD8F13DCA7F6009387BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA7DD8E13DCA7F6009387BF /* main.m */; };
-		9AA7DD9213DCA7F6009387BF /* SimpleMusicPlayerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA7DD9113DCA7F6009387BF /* SimpleMusicPlayerAppDelegate.m */; };
 		9AA7DD9513DCA7F6009387BF /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA7DD9313DCA7F6009387BF /* MainWindow.xib */; };
-		9AA7DD9813DCA7F6009387BF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA7DD9713DCA7F6009387BF /* MainViewController.m */; };
-		9AA7DD9A13DCA7F6009387BF /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA7DD9913DCA7F6009387BF /* MainView.xib */; };
-		9AA7DD9D13DCA7F6009387BF /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA7DD9C13DCA7F6009387BF /* FlipsideViewController.m */; };
-		9AA7DD9F13DCA7F6009387BF /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA7DD9E13DCA7F6009387BF /* FlipsideView.xib */; };
 		9AA7DDA613DCA7F6009387BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA7DD8113DCA7F6009387BF /* UIKit.framework */; };
 		9AA7DDA713DCA7F6009387BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA7DD8313DCA7F6009387BF /* Foundation.framework */; };
 		9AA7DDA813DCA7F6009387BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA7DD8513DCA7F6009387BF /* CoreGraphics.framework */; };
 		9AA7DDB013DCA7F6009387BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AA7DDAE13DCA7F6009387BF /* InfoPlist.strings */; };
 		9AA7DDB313DCA7F6009387BF /* SimpleMusicPlayerTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 9AA7DDB213DCA7F6009387BF /* SimpleMusicPlayerTests.h */; };
 		9AA7DDB513DCA7F6009387BF /* SimpleMusicPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA7DDB413DCA7F6009387BF /* SimpleMusicPlayerTests.m */; };
+		9AA7DDC713DCAB6E009387BF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA7DDC613DCAB6E009387BF /* AVFoundation.framework */; };
+		9AA7DDD313DCACE8009387BF /* SimpleMusicPlayerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA7DDCA13DCACE8009387BF /* SimpleMusicPlayerAppDelegate.m */; };
+		9AA7DDD413DCACE8009387BF /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA7DDCD13DCACE8009387BF /* FlipsideViewController.m */; };
+		9AA7DDD513DCACE8009387BF /* FlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA7DDCE13DCACE8009387BF /* FlipsideViewController.xib */; };
+		9AA7DDD613DCACE8009387BF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA7DDD113DCACE8009387BF /* MainViewController.m */; };
+		9AA7DDD713DCACE8009387BF /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA7DDD213DCACE8009387BF /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,25 +42,26 @@
 		9AA7DD8113DCA7F6009387BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9AA7DD8313DCA7F6009387BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9AA7DD8513DCA7F6009387BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9AA7DD8913DCA7F6009387BF /* SimpleMusicPlayer-Info.plist */ = {isa = PBXFileReference; path = "SimpleMusicPlayer-Info.plist"; sourceTree = "<group>"; };
+		9AA7DD8913DCA7F6009387BF /* SimpleMusicPlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleMusicPlayer-Info.plist"; sourceTree = "<group>"; };
 		9AA7DD8B13DCA7F6009387BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9AA7DD8D13DCA7F6009387BF /* SimpleMusicPlayer-Prefix.pch */ = {isa = PBXFileReference; path = "SimpleMusicPlayer-Prefix.pch"; sourceTree = "<group>"; };
+		9AA7DD8D13DCA7F6009387BF /* SimpleMusicPlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleMusicPlayer-Prefix.pch"; sourceTree = "<group>"; };
 		9AA7DD8E13DCA7F6009387BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9AA7DD9013DCA7F6009387BF /* SimpleMusicPlayerAppDelegate.h */ = {isa = PBXFileReference; path = SimpleMusicPlayerAppDelegate.h; sourceTree = "<group>"; };
-		9AA7DD9113DCA7F6009387BF /* SimpleMusicPlayerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleMusicPlayerAppDelegate.m; sourceTree = "<group>"; };
 		9AA7DD9413DCA7F6009387BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		9AA7DD9613DCA7F6009387BF /* MainViewController.h */ = {isa = PBXFileReference; path = MainViewController.h; sourceTree = "<group>"; };
-		9AA7DD9713DCA7F6009387BF /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		9AA7DD9913DCA7F6009387BF /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
-		9AA7DD9B13DCA7F6009387BF /* FlipsideViewController.h */ = {isa = PBXFileReference; path = FlipsideViewController.h; sourceTree = "<group>"; };
-		9AA7DD9C13DCA7F6009387BF /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
-		9AA7DD9E13DCA7F6009387BF /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
 		9AA7DDA513DCA7F6009387BF /* SimpleMusicPlayerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleMusicPlayerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AA7DDAD13DCA7F6009387BF /* SimpleMusicPlayerTests-Info.plist */ = {isa = PBXFileReference; path = "SimpleMusicPlayerTests-Info.plist"; sourceTree = "<group>"; };
+		9AA7DDAD13DCA7F6009387BF /* SimpleMusicPlayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleMusicPlayerTests-Info.plist"; sourceTree = "<group>"; };
 		9AA7DDAF13DCA7F6009387BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9AA7DDB113DCA7F6009387BF /* SimpleMusicPlayerTests-Prefix.pch */ = {isa = PBXFileReference; path = "SimpleMusicPlayerTests-Prefix.pch"; sourceTree = "<group>"; };
+		9AA7DDB113DCA7F6009387BF /* SimpleMusicPlayerTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleMusicPlayerTests-Prefix.pch"; sourceTree = "<group>"; };
 		9AA7DDB213DCA7F6009387BF /* SimpleMusicPlayerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleMusicPlayerTests.h; sourceTree = "<group>"; };
 		9AA7DDB413DCA7F6009387BF /* SimpleMusicPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleMusicPlayerTests.m; sourceTree = "<group>"; };
+		9AA7DDC613DCAB6E009387BF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9AA7DDC913DCACE8009387BF /* SimpleMusicPlayerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleMusicPlayerAppDelegate.h; sourceTree = "<group>"; };
+		9AA7DDCA13DCACE8009387BF /* SimpleMusicPlayerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleMusicPlayerAppDelegate.m; sourceTree = "<group>"; };
+		9AA7DDCC13DCACE8009387BF /* FlipsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		9AA7DDCD13DCACE8009387BF /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		9AA7DDCE13DCACE8009387BF /* FlipsideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlipsideViewController.xib; sourceTree = "<group>"; };
+		9AA7DDD013DCACE8009387BF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		9AA7DDD113DCACE8009387BF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		9AA7DDD213DCACE8009387BF /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AA7DDC713DCAB6E009387BF /* AVFoundation.framework in Frameworks */,
 				9AA7DD8213DCA7F6009387BF /* UIKit.framework in Frameworks */,
 				9AA7DD8413DCA7F6009387BF /* Foundation.framework in Frameworks */,
 				9AA7DD8613DCA7F6009387BF /* CoreGraphics.framework in Frameworks */,
@@ -108,6 +111,7 @@
 		9AA7DD8013DCA7F6009387BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9AA7DDC613DCAB6E009387BF /* AVFoundation.framework */,
 				9AA7DD8113DCA7F6009387BF /* UIKit.framework */,
 				9AA7DD8313DCA7F6009387BF /* Foundation.framework */,
 				9AA7DD8513DCA7F6009387BF /* CoreGraphics.framework */,
@@ -118,15 +122,10 @@
 		9AA7DD8713DCA7F6009387BF /* SimpleMusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				9AA7DD9013DCA7F6009387BF /* SimpleMusicPlayerAppDelegate.h */,
-				9AA7DD9113DCA7F6009387BF /* SimpleMusicPlayerAppDelegate.m */,
-				9AA7DD9313DCA7F6009387BF /* MainWindow.xib */,
-				9AA7DD9613DCA7F6009387BF /* MainViewController.h */,
-				9AA7DD9713DCA7F6009387BF /* MainViewController.m */,
-				9AA7DD9913DCA7F6009387BF /* MainView.xib */,
-				9AA7DD9B13DCA7F6009387BF /* FlipsideViewController.h */,
-				9AA7DD9C13DCA7F6009387BF /* FlipsideViewController.m */,
-				9AA7DD9E13DCA7F6009387BF /* FlipsideView.xib */,
+				9AA7DDD813DCAD05009387BF /* Resources */,
+				9AA7DDC813DCACE8009387BF /* AppDelegate */,
+				9AA7DDCB13DCACE8009387BF /* FlipsideViewController */,
+				9AA7DDCF13DCACE8009387BF /* MainViewController */,
 				9AA7DD8813DCA7F6009387BF /* Supporting Files */,
 			);
 			path = SimpleMusicPlayer;
@@ -135,6 +134,7 @@
 		9AA7DD8813DCA7F6009387BF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9AA7DD9313DCA7F6009387BF /* MainWindow.xib */,
 				9AA7DD8913DCA7F6009387BF /* SimpleMusicPlayer-Info.plist */,
 				9AA7DD8A13DCA7F6009387BF /* InfoPlist.strings */,
 				9AA7DD8D13DCA7F6009387BF /* SimpleMusicPlayer-Prefix.pch */,
@@ -161,6 +161,42 @@
 				9AA7DDB113DCA7F6009387BF /* SimpleMusicPlayerTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AA7DDC813DCACE8009387BF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9AA7DDC913DCACE8009387BF /* SimpleMusicPlayerAppDelegate.h */,
+				9AA7DDCA13DCACE8009387BF /* SimpleMusicPlayerAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		9AA7DDCB13DCACE8009387BF /* FlipsideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9AA7DDCC13DCACE8009387BF /* FlipsideViewController.h */,
+				9AA7DDCD13DCACE8009387BF /* FlipsideViewController.m */,
+				9AA7DDCE13DCACE8009387BF /* FlipsideViewController.xib */,
+			);
+			path = FlipsideViewController;
+			sourceTree = "<group>";
+		};
+		9AA7DDCF13DCACE8009387BF /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9AA7DDD013DCACE8009387BF /* MainViewController.h */,
+				9AA7DDD113DCACE8009387BF /* MainViewController.m */,
+				9AA7DDD213DCACE8009387BF /* MainViewController.xib */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		9AA7DDD813DCAD05009387BF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +271,8 @@
 			files = (
 				9AA7DD8C13DCA7F6009387BF /* InfoPlist.strings in Resources */,
 				9AA7DD9513DCA7F6009387BF /* MainWindow.xib in Resources */,
-				9AA7DD9A13DCA7F6009387BF /* MainView.xib in Resources */,
-				9AA7DD9F13DCA7F6009387BF /* FlipsideView.xib in Resources */,
+				9AA7DDD513DCACE8009387BF /* FlipsideViewController.xib in Resources */,
+				9AA7DDD713DCACE8009387BF /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +309,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AA7DD8F13DCA7F6009387BF /* main.m in Sources */,
-				9AA7DD9213DCA7F6009387BF /* SimpleMusicPlayerAppDelegate.m in Sources */,
-				9AA7DD9813DCA7F6009387BF /* MainViewController.m in Sources */,
-				9AA7DD9D13DCA7F6009387BF /* FlipsideViewController.m in Sources */,
+				9AA7DDD313DCACE8009387BF /* SimpleMusicPlayerAppDelegate.m in Sources */,
+				9AA7DDD413DCACE8009387BF /* FlipsideViewController.m in Sources */,
+				9AA7DDD613DCACE8009387BF /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
