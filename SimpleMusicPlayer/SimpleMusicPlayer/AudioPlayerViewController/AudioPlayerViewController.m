@@ -129,6 +129,18 @@
 
 #pragma mark - User interaction events
 - (IBAction)progressChanged:(UISlider *)sender {
+    
+    NSTimeInterval playbackDelay = (NSTimeInterval)sender.value;
+
+    if ([audioPlayer isPlaying]){        
+        [audioPlayer pause];
+        [audioPlayer setCurrentTime:playbackDelay];
+        [audioPlayer play];
+        
+    }
+    else {
+        [audioPlayer setCurrentTime:playbackDelay];
+    }
 
 }
 
