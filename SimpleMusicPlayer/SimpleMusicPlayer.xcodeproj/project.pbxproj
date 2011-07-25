@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A0537B913DE084B00C1E27D /* Amaranth.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A0537B813DE084B00C1E27D /* Amaranth.mp3 */; };
+		9A0537C513DE36D500C1E27D /* Dj Mamana - Revolución en mayo (v3.1).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A0537C413DE36D500C1E27D /* Dj Mamana - Revolución en mayo (v3.1).mp3 */; };
 		9AA7DD8213DCA7F6009387BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA7DD8113DCA7F6009387BF /* UIKit.framework */; };
 		9AA7DD8413DCA7F6009387BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA7DD8313DCA7F6009387BF /* Foundation.framework */; };
 		9AA7DD8613DCA7F6009387BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA7DD8513DCA7F6009387BF /* CoreGraphics.framework */; };
@@ -47,7 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9A0537B813DE084B00C1E27D /* Amaranth.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Amaranth.mp3; sourceTree = "<group>"; };
+		9A0537C413DE36D500C1E27D /* Dj Mamana - Revolución en mayo (v3.1).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dj Mamana - Revolución en mayo (v3.1).mp3"; sourceTree = "<group>"; };
 		9AA7DD7D13DCA7F6009387BF /* SimpleMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA7DD8113DCA7F6009387BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9AA7DD8313DCA7F6009387BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A0537C313DE36D500C1E27D /* AudioFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9A0537C413DE36D500C1E27D /* Dj Mamana - Revolución en mayo (v3.1).mp3 */,
+			);
+			path = AudioFiles;
+			sourceTree = "<group>";
+		};
 		9AA7DD7213DCA7F5009387BF = {
 			isa = PBXGroup;
 			children = (
@@ -215,7 +223,7 @@
 		9AA7DDD813DCAD05009387BF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9A0537B813DE084B00C1E27D /* Amaranth.mp3 */,
+				9A0537C313DE36D500C1E27D /* AudioFiles */,
 				9AA7DDF413DDFCFC009387BF /* ProgressBar */,
 				9AA7DDF813DDFCFC009387BF /* VolumeBar */,
 			);
@@ -333,7 +341,7 @@
 				9AA7DDFF13DDFCFC009387BF /* volume_BLACK.png in Resources */,
 				9AA7DE0013DDFCFC009387BF /* volume_CIRCLE.png in Resources */,
 				9AA7DE0113DDFCFC009387BF /* volume_GRAY.png in Resources */,
-				9A0537B913DE084B00C1E27D /* Amaranth.mp3 in Resources */,
+				9A0537C513DE36D500C1E27D /* Dj Mamana - Revolución en mayo (v3.1).mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -120,7 +120,7 @@
     [self setupVolumeBar];
     
     // Please replece by your audio.
-    [self setupAudioWithSongNamed:@"Amaranth.mp3"];
+    [self setupAudioWithSongNamed:@"Dj Mamana - Revoluci—n en mayo (v3.1).mp3"];
 }
 
 - (void)viewDidUnload {
