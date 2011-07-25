@@ -3,7 +3,6 @@
 //  SimpleMusicPlayer
 //
 //  Created by Mariano Vicente on 07/25/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import "AudioPlayerViewController.h"
@@ -15,26 +14,43 @@
 }
 
 - (void)setupProgressBar {
-    UIImage *stretchLeftTrack = [[UIImage imageNamed:@"PROGRESS_BLACK.png"]
+    UIImage *stretchLeftTrack = [[UIImage imageNamed:@"progress-background.png"]
+                                 stretchableImageWithLeftCapWidth:(NSInteger)10.0
+                                 topCapHeight:(NSInteger)0.0];
+    
+    UIImage *stretchyRightTrack = [[UIImage imageNamed:@"progressbra-front.png"]
+                                   stretchableImageWithLeftCapWidth:(NSInteger)10.0
+                                   topCapHeight:(NSInteger)0.0];
+    
+    [progresSlider setThumbImage: [UIImage imageNamed:@"progress-point.png"]
+                       forState:UIControlStateNormal];
+    
+    [progresSlider setMinimumTrackImage:stretchLeftTrack    forState:UIControlStateNormal];
+    [progresSlider setMaximumTrackImage:stretchyRightTrack  forState:UIControlStateNormal];
+    
+}
+
+- (void)setupVolumeBar {
+    UIImage *stretchLeftTrack = [[UIImage imageNamed:@"volume_BLACK.png"]
                                 stretchableImageWithLeftCapWidth:(NSInteger)10.0
                                 topCapHeight:(NSInteger)0.0];
 
-    UIImage *stretchyRightTrack = [[UIImage imageNamed:@"PROGRESS_GRAY.png"]
+    UIImage *stretchyRightTrack = [[UIImage imageNamed:@"volume_GRAY.png"]
                                  stretchableImageWithLeftCapWidth:(NSInteger)10.0
                                  topCapHeight:(NSInteger)0.0];
 
-    [progresSlider setThumbImage: [UIImage imageNamed:@"PROGRESS_CIRCLE.png"]
+    [volumeSlider setThumbImage: [UIImage imageNamed:@"volume_CIRCLE.png"]
                        forState:UIControlStateNormal];
 
-    [progresSlider setMinimumTrackImage:stretchLeftTrack    forState:UIControlStateNormal];
-    [progresSlider setMaximumTrackImage:stretchyRightTrack  forState:UIControlStateNormal];
+    [volumeSlider setMinimumTrackImage:stretchLeftTrack    forState:UIControlStateNormal];
+    [volumeSlider setMaximumTrackImage:stretchyRightTrack  forState:UIControlStateNormal];
 }
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupProgressBar];
-    //[self setupVolumeBar];
+    [self setupVolumeBar];
 }
 
 - (void)viewDidUnload {

@@ -25,6 +25,14 @@
 		9AA7DDD513DCACE8009387BF /* FlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA7DDCE13DCACE8009387BF /* FlipsideViewController.xib */; };
 		9AA7DDD613DCACE8009387BF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA7DDD113DCACE8009387BF /* MainViewController.m */; };
 		9AA7DDD713DCACE8009387BF /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA7DDD213DCACE8009387BF /* MainViewController.xib */; };
+		9AA7DDEE13DDEEEF009387C2 /* AudioPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA7DDEE13DDEEEF009387C1 /* AudioPlayerViewController.m */; };
+		9AA7DDEE13DDEEEF009387C4 /* AudioPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA7DDEE13DDEEEF009387C3 /* AudioPlayerViewController.xib */; };
+		9AA7DDFC13DDFCFC009387BF /* progress-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AA7DDF513DDFCFC009387BF /* progress-background.png */; };
+		9AA7DDFD13DDFCFC009387BF /* progress-point.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AA7DDF613DDFCFC009387BF /* progress-point.png */; };
+		9AA7DDFE13DDFCFC009387BF /* progressbra-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AA7DDF713DDFCFC009387BF /* progressbra-front.png */; };
+		9AA7DDFF13DDFCFC009387BF /* volume_BLACK.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AA7DDF913DDFCFC009387BF /* volume_BLACK.png */; };
+		9AA7DE0013DDFCFC009387BF /* volume_CIRCLE.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AA7DDFA13DDFCFC009387BF /* volume_CIRCLE.png */; };
+		9AA7DE0113DDFCFC009387BF /* volume_GRAY.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AA7DDFB13DDFCFC009387BF /* volume_GRAY.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +70,15 @@
 		9AA7DDD013DCACE8009387BF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		9AA7DDD113DCACE8009387BF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		9AA7DDD213DCACE8009387BF /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		9AA7DDEE13DDEEEF009387C0 /* AudioPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioPlayerViewController.h; sourceTree = "<group>"; };
+		9AA7DDEE13DDEEEF009387C1 /* AudioPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerViewController.m; sourceTree = "<group>"; };
+		9AA7DDEE13DDEEEF009387C3 /* AudioPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioPlayerViewController.xib; sourceTree = "<group>"; };
+		9AA7DDF513DDFCFC009387BF /* progress-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-background.png"; sourceTree = "<group>"; };
+		9AA7DDF613DDFCFC009387BF /* progress-point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-point.png"; sourceTree = "<group>"; };
+		9AA7DDF713DDFCFC009387BF /* progressbra-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progressbra-front.png"; sourceTree = "<group>"; };
+		9AA7DDF913DDFCFC009387BF /* volume_BLACK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volume_BLACK.png; sourceTree = "<group>"; };
+		9AA7DDFA13DDFCFC009387BF /* volume_CIRCLE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volume_CIRCLE.png; sourceTree = "<group>"; };
+		9AA7DDFB13DDFCFC009387BF /* volume_GRAY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volume_GRAY.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				9AA7DDD813DCAD05009387BF /* Resources */,
+				9AA7DDEE13DDEEEF009387BF /* AudioPlayerViewController */,
 				9AA7DDC813DCACE8009387BF /* AppDelegate */,
 				9AA7DDCB13DCACE8009387BF /* FlipsideViewController */,
 				9AA7DDCF13DCACE8009387BF /* MainViewController */,
@@ -195,8 +213,40 @@
 		9AA7DDD813DCAD05009387BF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9AA7DDF413DDFCFC009387BF /* ProgressBar */,
+				9AA7DDF813DDFCFC009387BF /* VolumeBar */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		9AA7DDEE13DDEEEF009387BF /* AudioPlayerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9AA7DDEE13DDEEEF009387C0 /* AudioPlayerViewController.h */,
+				9AA7DDEE13DDEEEF009387C1 /* AudioPlayerViewController.m */,
+				9AA7DDEE13DDEEEF009387C3 /* AudioPlayerViewController.xib */,
+			);
+			path = AudioPlayerViewController;
+			sourceTree = "<group>";
+		};
+		9AA7DDF413DDFCFC009387BF /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				9AA7DDF513DDFCFC009387BF /* progress-background.png */,
+				9AA7DDF613DDFCFC009387BF /* progress-point.png */,
+				9AA7DDF713DDFCFC009387BF /* progressbra-front.png */,
+			);
+			path = ProgressBar;
+			sourceTree = "<group>";
+		};
+		9AA7DDF813DDFCFC009387BF /* VolumeBar */ = {
+			isa = PBXGroup;
+			children = (
+				9AA7DDF913DDFCFC009387BF /* volume_BLACK.png */,
+				9AA7DDFA13DDFCFC009387BF /* volume_CIRCLE.png */,
+				9AA7DDFB13DDFCFC009387BF /* volume_GRAY.png */,
+			);
+			path = VolumeBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +323,13 @@
 				9AA7DD9513DCA7F6009387BF /* MainWindow.xib in Resources */,
 				9AA7DDD513DCACE8009387BF /* FlipsideViewController.xib in Resources */,
 				9AA7DDD713DCACE8009387BF /* MainViewController.xib in Resources */,
+				9AA7DDEE13DDEEEF009387C4 /* AudioPlayerViewController.xib in Resources */,
+				9AA7DDFC13DDFCFC009387BF /* progress-background.png in Resources */,
+				9AA7DDFD13DDFCFC009387BF /* progress-point.png in Resources */,
+				9AA7DDFE13DDFCFC009387BF /* progressbra-front.png in Resources */,
+				9AA7DDFF13DDFCFC009387BF /* volume_BLACK.png in Resources */,
+				9AA7DE0013DDFCFC009387BF /* volume_CIRCLE.png in Resources */,
+				9AA7DE0113DDFCFC009387BF /* volume_GRAY.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +369,7 @@
 				9AA7DDD313DCACE8009387BF /* SimpleMusicPlayerAppDelegate.m in Sources */,
 				9AA7DDD413DCACE8009387BF /* FlipsideViewController.m in Sources */,
 				9AA7DDD613DCACE8009387BF /* MainViewController.m in Sources */,
+				9AA7DDEE13DDEEEF009387C2 /* AudioPlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -374,6 +433,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -382,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -389,6 +450,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -484,6 +546,7 @@
 				9AA7DDBA13DCA7F6009387BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AA7DDBB13DCA7F6009387BF /* Build configuration list for PBXNativeTarget "SimpleMusicPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +555,7 @@
 				9AA7DDBD13DCA7F6009387BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
