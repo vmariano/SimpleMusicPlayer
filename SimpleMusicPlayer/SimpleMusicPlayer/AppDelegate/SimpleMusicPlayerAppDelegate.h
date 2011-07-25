@@ -9,13 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @class MainViewController;
-
 @interface SimpleMusicPlayerAppDelegate : NSObject <UIApplicationDelegate> {
 
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-
 @property (nonatomic, retain) IBOutlet MainViewController *mainViewController;
 
 @end

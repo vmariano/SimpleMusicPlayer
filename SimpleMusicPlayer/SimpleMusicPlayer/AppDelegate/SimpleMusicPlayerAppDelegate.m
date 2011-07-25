@@ -3,22 +3,17 @@
 //  SimpleMusicPlayer
 //
 //  Created by Mariano Vicente on 7/24/11.
-//  Copyright 2011 FDV Solutions. All rights reserved.
 //
 
 #import "SimpleMusicPlayerAppDelegate.h"
-
 #import "MainViewController.h"
 
 @implementation SimpleMusicPlayerAppDelegate
-
-
 @synthesize window=_window;
-
 @synthesize mainViewController=_mainViewController;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     // Add the main view controller's view to the window and display.
     self.window.rootViewController = self.mainViewController;
@@ -65,8 +60,7 @@
      */
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
     [_window release];
     [_mainViewController release];
     [super dealloc];

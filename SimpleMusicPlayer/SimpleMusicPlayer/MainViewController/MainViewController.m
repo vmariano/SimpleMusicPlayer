@@ -3,10 +3,10 @@
 //  SimpleMusicPlayer
 //
 //  Created by Mariano Vicente on 7/24/11.
-//  Copyright 2011 FDV Solutions. All rights reserved.
 //
 
 #import "MainViewController.h"
+#import "AudioPlayerViewController.h"
 
 @implementation MainViewController
 
@@ -15,32 +15,35 @@
 }
 
 - (IBAction)showInfo:(id)sender {    
-    FlipsideViewController *controller = [[FlipsideViewController alloc] initWithNibName:@"FlipsideView" bundle:nil];
+    FlipsideViewController *controller = [[FlipsideViewController alloc] initWithNibName:@"FlipsideViewController" bundle:nil];
+    
     controller.delegate = self;
-    
     controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+
     [self presentModalViewController:controller animated:YES];
-    
     [controller release];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations.
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 - (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc. that aren't in use.
+}
+
+- (void)startAudioPlayer {
+   AudioPlayerViewController * ap = [[AudioPlayerViewController alloc] initWithNibName:@"AudioPlayerViewController" bundle:nil];
+   [self.view addSubview:ap.view];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self startAudioPlayer];
 }
 
 - (void)viewDidUnload {
     [super viewDidUnload];
-
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (void)dealloc {
