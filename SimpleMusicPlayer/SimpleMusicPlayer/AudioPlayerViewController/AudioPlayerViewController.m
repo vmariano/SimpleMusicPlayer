@@ -118,6 +118,8 @@
     [super viewDidLoad];
     [self setupProgressBar];
     [self setupVolumeBar];
+    
+    // Please replece by your audio.
     [self setupAudioWithSongNamed:@"Amaranth.mp3"];
 }
 
