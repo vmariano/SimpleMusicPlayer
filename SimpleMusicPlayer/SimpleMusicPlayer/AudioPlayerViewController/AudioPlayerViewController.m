@@ -47,6 +47,17 @@
 }
 
 #pragma mark -
+- (void)updatePlayingTime:(NSTimeInterval)playbackDelay {
+    if ([audioPlayer isPlaying]){
+        [audioPlayer pause];
+        [audioPlayer setCurrentTime:playbackDelay];
+        [audioPlayer play];
+
+    }
+    else {
+        [audioPlayer setCurrentTime:playbackDelay];
+    }
+}
 - (void)setupAudioPlayer:(NSURL *)url {
     if (audioPlayer == nil) {
         NSError *error;
@@ -128,37 +139,35 @@
 }
 
 #pragma mark - User interaction events
-- (IBAction)progressChanged:(UISlider *)sender {
-    
-    NSTimeInterval playbackDelay = (NSTimeInterval)sender.value;
 
-    if ([audioPlayer isPlaying]){        
-        [audioPlayer pause];
-        [audioPlayer setCurrentTime:playbackDelay];
-        [audioPlayer play];
-        
-    }
-    else {
-        [audioPlayer setCurrentTime:playbackDelay];
-    }
+- (IBAction)progressChanged:(UISlider *)sender {
+    NSTimeInterval playbackDelay = (NSTimeInterval)sender.value;
+   [self updatePlayingTime:playbackDelay];
 
 }
 
 - (IBAction)volumeChanged:(UISlider *)sender {
-    audioPlayer.volume = (float)sender.value;
+    audioPlayer.volume = sender.value;
 }
 
 - (IBAction)rewindAction {
+    NSTimeInterval playbackDelay = audioPlayer.currentTime - kInterval;        
+    
+    if (playbackDelay < 0) {
+        playbackDelay = 0.0;
+    }
+
+    [self updatePlayingTime:playbackDelay];
     
 }
 
 - (IBAction)playAction:(id)sender {
     [audioPlayer play];    
     progresTimer = [NSTimer scheduledTimerWithTimeInterval:0.01
-                                                   target:self
-                                                 selector:@selector(updateProgress)
-                                                 userInfo:nil
-                                                  repeats:YES];
+                                                    target:self
+                                                  selector:@selector(updateProgress)
+                                                  userInfo:nil
+                                                   repeats:YES];
 }
 
 - (IBAction)pauseAction:(id)sender {
@@ -167,10 +176,16 @@
 
 - (IBAction)stopAction:(id)sender {
     [audioPlayer pause];
+
+
+
+    [audioPlayer setCurrentTime:0.0];
+    [self updatePlayingTime:0.0];
 }
 
 - (IBAction)fowardAction:(id)sender {
-
+    NSTimeInterval playbackDelay = audioPlayer.currentTime + kInterval;
+    [self updatePlayingTime:playbackDelay];
 }
 
 

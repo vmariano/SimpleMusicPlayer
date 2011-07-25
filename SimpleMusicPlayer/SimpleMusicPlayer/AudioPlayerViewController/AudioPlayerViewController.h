@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
+#define kInterval  7.0;
 
 @interface AudioPlayerViewController : UIViewController <AVAudioPlayerDelegate> {
     IBOutlet UISlider *volumeSlider;
