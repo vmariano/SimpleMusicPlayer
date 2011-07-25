@@ -25,7 +25,7 @@
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,7 +34,8 @@
 
 - (void)startAudioPlayer {
    AudioPlayerViewController * ap = [[AudioPlayerViewController alloc] initWithNibName:@"AudioPlayerViewController" bundle:nil];
-   [self.view addSubview:ap.view];
+
+    [self.view addSubview:ap.view];
 }
 
 - (void)viewDidLoad {
